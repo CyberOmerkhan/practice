@@ -87,9 +87,19 @@ body{
 .profile_content{
     position: absolute;
     bottom: 0;
-    padding: 5px;
+    padding-bottom: 20px;
 }
 .profile_content .profile{
     display: flex;
-    
+}
+.profile_content .profile .name_job{
+    line-height: 15px;
+}
+.profile_content .profile .name_job .name{
+    color: #fff;
+    font-size: 15px;
+}
+.profile_content .profile .name_job .job{
+    position: absolute;
+    color: #f3f3f3;
 }
