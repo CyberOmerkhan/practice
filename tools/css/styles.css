@@ -12,10 +12,11 @@ body{
 }
 .sidebar{
     position: fixed;
-    width: 240px;
+    width: 78px;
     background: #11101d;
     height: 100%;
     padding: 6px 14px;
+    transition: all 0.3s ease;
 }
 .sidebar .logo_content .logo{
     display: flex;
@@ -125,4 +126,24 @@ body{
 .profile_content img{
     height: 35px;
     width: 35px;
+}
+.home_content{
+    width: calc(100% - 78px);
+    position: absolute;
+    height: 100%;
+    transition: all 0.5 ease;
+    left: 78px;
+}
+.home_content .text{
+    font-size: 25px;
+    font-weight: 500;
+    color: #11101d;
+    margin: 12px;
+}
+.sidebar.active ~ .home_content{
+    width: calc(100% - 240px);
+    left: 240px;
+}
+.sidebar.active{
+    width: 240px;
 }
